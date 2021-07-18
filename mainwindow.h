@@ -36,5 +36,4 @@ private:
     QNetworkReply *repoReply;
     QByteArray dataBuffer;
     QPixmap *img;
-    int repoSize;
 };

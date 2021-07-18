@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     netReply = nullptr;
     repoReply = nullptr;
     img = new QPixmap();
-    setFixedSize(550,460);
+    setFixedSize(606,469);
 }
 
 void MainWindow::clearValues()
@@ -42,11 +42,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_usernameButton_clicked()
 {
-    auto username = QInputDialog::getText(this,"Github UserName","Enter your GitHub Username");
-    if(username.isEmpty()){
-        QMessageBox::warning(this,"Error","No Username specified");
-        return;
-    }else{
+    auto username = QInputDialog::getText(this,"Github Username","Enter your GitHub Username");
+    if(!username.isEmpty()){
         clearValues();
         QNetworkRequest req{QUrl(QString("https://api.github.com/users/%1").arg(username))};
         QNetworkRequest repoReq{QUrl(QString("https://api.github.com/users/%1/repos").arg(username))};
@@ -107,11 +104,6 @@ void MainWindow::finishReading()
         // SET DISPLAY NAME
         QString name = userJsonInfo.value("name").toString();
         ui->nameLabel->setText(name);
-
-//        //SET REPO(PUBLIC) NUMBER
-//        auto repoNum = userJsonInfo.value("public_repos").toInt();
-//        ui->repoBox->setValue(repoNum);
-//        repoSize = repoNum;
 
         //SET BIO
         auto bio = userJsonInfo.value("bio").toString();

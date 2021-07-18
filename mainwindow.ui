@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>550</width>
-    <height>460</height>
+    <width>622</width>
+    <height>469</height>
    </rect>
   </property>
   <property name="palette">
@@ -75,7 +75,7 @@
    </palette>
   </property>
   <property name="windowTitle">
-   <string>GitHub API</string>
+   <string>GitHub Info Checker</string>
   </property>
   <property name="autoFillBackground">
    <bool>true</bool>
@@ -130,13 +130,16 @@
        <widget class="QGroupBox" name="groupBox">
         <property name="font">
          <font>
+          <family>Verdana</family>
           <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(255, 170, 0);</string>
+         <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Verdana&quot;;</string>
         </property>
         <property name="title">
          <string>USER INFO</string>
@@ -157,9 +160,11 @@
              </property>
              <property name="font">
               <font>
-               <pointsize>12</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Verdana</family>
+               <pointsize>10</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -171,9 +176,11 @@
             <widget class="QLabel" name="usernameLabel">
              <property name="font">
               <font>
+               <family>Verdana</family>
                <pointsize>10</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
                <underline>true</underline>
               </font>
              </property>
@@ -199,9 +206,11 @@
              </property>
              <property name="font">
               <font>
-               <pointsize>12</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Verdana</family>
+               <pointsize>10</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -213,9 +222,11 @@
             <widget class="QLabel" name="nameLabel">
              <property name="font">
               <font>
+               <family>Verdana</family>
                <pointsize>10</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
                <underline>true</underline>
               </font>
              </property>
@@ -232,9 +243,11 @@
             <widget class="QLabel" name="label">
              <property name="font">
               <font>
-               <pointsize>11</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Verdana</family>
+               <pointsize>10</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -266,9 +279,11 @@
              </property>
              <property name="font">
               <font>
-               <pointsize>12</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <family>Verdana</family>
+               <pointsize>10</pointsize>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -280,9 +295,11 @@
             <widget class="QLabel" name="typeLabel">
              <property name="font">
               <font>
+               <family>Verdana</family>
                <pointsize>10</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
+               <weight>9</weight>
+               <italic>false</italic>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -300,9 +317,11 @@
               <widget class="QLabel" name="label_5">
                <property name="font">
                 <font>
-                 <pointsize>8</pointsize>
-                 <weight>75</weight>
-                 <bold>true</bold>
+                 <family>Verdana</family>
+                 <pointsize>10</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
                 </font>
                </property>
                <property name="text">
@@ -328,9 +347,11 @@
               <widget class="QLabel" name="label_6">
                <property name="font">
                 <font>
-                 <pointsize>8</pointsize>
-                 <weight>75</weight>
-                 <bold>true</bold>
+                 <family>Verdana</family>
+                 <pointsize>10</pointsize>
+                 <weight>9</weight>
+                 <italic>false</italic>
+                 <bold>false</bold>
                 </font>
                </property>
                <property name="text">
@@ -385,7 +406,10 @@
            </sizepolicy>
           </property>
           <property name="frameShape">
-           <enum>QFrame::Box</enum>
+           <enum>QFrame::Panel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
           </property>
           <property name="text">
            <string/>
@@ -403,6 +427,9 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
+          <property name="styleSheet">
+           <string notr="true">font: 75 10pt &quot;Verdana&quot;;</string>
+          </property>
           <property name="text">
            <string>USERNAME</string>
           </property>
@@ -418,13 +445,16 @@
        <widget class="QGroupBox" name="groupBox_2">
         <property name="font">
          <font>
+          <family>Verdana</family>
           <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(0, 12, 186);</string>
+         <string notr="true">color: rgb(0, 0, 0);
+font: 75 10pt &quot;Verdana&quot;;</string>
         </property>
         <property name="title">
          <string>BIO</string>
@@ -453,13 +483,16 @@
        <widget class="QGroupBox" name="groupBox_3">
         <property name="font">
          <font>
+          <family>Verdana</family>
           <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(145, 0, 2);</string>
+         <string notr="true">color: rgb(140, 140, 140);
+font: 75 10pt &quot;Verdana&quot;;</string>
         </property>
         <property name="title">
          <string>REPO LIST(PUBLIC)</string>
