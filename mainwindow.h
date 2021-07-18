@@ -28,6 +28,7 @@ private slots:
     void finishedGettingRepos();
     void finishReading();
     void setUserImage();
+    void on_actionAbout_Qt_triggered();
 
 private:
     Ui::MainWindow *ui;

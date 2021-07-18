@@ -1,12 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QJsonValue>
 #include <QJsonArray>
 #include <QInputDialog>
 #include <QMessageBox>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -136,3 +136,9 @@ void MainWindow::setUserImage()
     ui->picLabel->setPixmap(temp);
     qDebug() << "Pixmap end";
 }
+
+void MainWindow::on_actionAbout_Qt_triggered()
+{
+    QMessageBox::aboutQt(this,"About Qt");
+}
+
