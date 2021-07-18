@@ -1,4 +1,4 @@
-# GitHub_API
+# GitHub_Info_Checker
 A simple application that makes use of the GitHub API to show Info on GitHub users(Trash UI, i'm still working on it)
 NB: It uses Open SSL so you need to have that setup in Qt Creator if you want to build and compile the code...If you 'package' the application into an executable, you need to put [these](https://www.mediafire.com/file/rprnw1e0neau5aa/SSL_Dependency.zip/file) Open SSL DLLs in the same dir as the .EXE file for it to work.
 
